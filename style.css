@@ -1,144 +1,94 @@
- * {
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
-}
-header {
-
-    background-image: url(./imgnike/header_bg_image\ 1\ \(2\).jpg);
-    height: 600px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-header nav {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
+.logo {
+    display: grid;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-}
-.logo a {
-    color: #CB0A15;
-    font-family: Arial;
-    font-size: 20px;
-       font-weight: 700;
-   
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
 }
 
-header ul li {
-    display: inline-block;
-
+.bosh h1 {
+    color: orange;
 }
 
-header ul li a:hover {
-    background-color: #515151;
+.bosh h2 {
     color: white;
 }
 
-header ul li a {
-    color: #515151;
-    padding: 10px;
-    display: block;
-    font-family: Arial;
-    font-size: 18px;
-
-    font-weight: 700;
-
+.bosh h3 {
+    color: white;
 }
 
-header h1 {
+nav p:hover {
+    color: yellow;
     text-align: center;
-    color: #CB0A15;
-    font-family: Arial;
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 215px;
 }
 
-header p {
-    color: #000;
-    font-family: Arial;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 500;
-
+.logo ul li {
+    display: inline-block;
+    padding: 15px;
 }
 
-.main-img {
-    width: 540px;
-    height: 400px;
-    
-
+.box ul li a:hover {
+    color: yellow;
 }
 
-.main-01 {
-    width: 1030px;
-    height: 900px;
+.main p b {
+    color: orange;
+}
+
+.box ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.main p {
+    color: white;
+}
+
+.menu {
+    background-image: url(./img/victor-garcia-1263465-unsplash.png);
+    max-width: 1080px;
+    height: 500px;
+    background-repeat: no-repeat;
     margin: auto;
-    display: flex;
-    margin-top: 80px;
+    box-sizing: border-box;
+    padding: 50px;
 }
 
-.img-tiny {
-    width: 160px;
-    height: 160px;
-
+@media screen and (max-width:500px) {
+    .menu {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
 }
 
-.main-tiny {
-    display: flex;
-    padding-left: 15px;
-
+.katra .box img {
+    max-width: 100%;
 }
 
-.h2 {
+.karta {
+    display: grid;
+    grid-template-columns: auto auto auto;
     padding: 10px;
-}
-
-.p {
-    margin-left: 10px;
-}
-
-.img-bigger {
-    width: 160px;
-    height: 160px;
-    display: flex;
-
-    margin-top: 15px;
-}
-
-.main-h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-footer {
-    width: 1300px;
-    height: 250px;
-
+    gap: 15px 15px;
+    justify-content: center;
+    max-width: 100%;
     margin: auto;
+}
+
+@media screen and (max-width:800) {
+    .karta {
+        grid-template-columns: auto auto;
+        background-color: red;
+    }
 
 }
 
-.footer {
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.footer-2 {
-    color: red;
-}
-
-.footer-1a {
-    color: #A5A5A5;
-    font-family: Arial;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.footer_h2 {
-    margin-top: 35px;
-    margin-bottom: 10px;
+@media screen and (max-width:400) {
+    .karta {
+        grid-template-columns: auto;
+        background-color: green;
+    }
 }
